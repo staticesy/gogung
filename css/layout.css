@@ -1,0 +1,173 @@
+@charset "utf-8";
+
+body{
+  max-width: 414px;
+  margin:0px auto;
+}
+
+/* 헤더영역 */
+
+header{
+  height: 50px;
+  position: relative;
+  border-bottom: 1px solid #5bc2ac;
+}
+
+header > h1 > a{
+  line-height: 50px;
+}
+
+header > h1 > a > img{
+  height: 40px;
+  position: absolute;
+  top: 5px;
+  left: 15px;
+}
+
+header > a{}
+header > a > img{
+  width: 36px;
+  position: absolute;
+  right: 70px; top: 7px;
+  cursor: pointer;
+}
+
+header .toggle_btn > img{
+  width: 36px;
+  position: absolute;
+  right: 15px; top: 7px;
+  cursor: pointer;
+}
+
+
+/* 내비게이션 영역 */
+
+nav{
+  width: 100%; height: 100%;
+  position: fixed;
+  left: 100%; top: 0px;
+  background-color: rgb(152,152,152);
+  opacity: 0.97;
+  transition: .5s;
+  z-index: 999;
+}
+
+nav i.fa-times{
+  color: #5bc2ac;
+  font-size: 28px;
+  cursor: pointer;
+  padding: 5px;
+  transform: translate(15px, 50px);
+}
+
+.gnb{
+  width: 85%; height: 105%;
+  background-color: #e8e7e7;
+  opacity: 1;
+  margin-left: 15%;
+  margin-top: -45px;
+}
+
+.gnb_box{
+  transform: translateY(60px);
+}
+
+.gnb_box > li{
+  text-indent: 20px;
+  border-bottom: 1px solid #499684;
+  display: block;
+  position: relative;
+}
+
+.gnb_box > li i.fa-angle-down{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  padding: 5px;
+}
+
+
+.gnb_box > li > label{
+  font-size: 18px;
+  line-height: 40px;
+  color: #499684;
+  display: block;
+  cursor: pointer;
+}
+
+.gnb_box img{
+  width: 18px; height: 18px;
+}
+
+
+#toggle:checked + header nav{left: 0px;}
+.gnb_box input[type=checkbox]:checked + .sub{display: block;}
+
+
+.sub{
+  width: 85%; 
+  display: none;
+}
+
+.sub > li{
+  text-indent: 45px;
+  line-height: 20px;
+  display: block;
+  cursor: pointer;
+}
+.sub > li > a{
+  color: #224940;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+
+
+
+/* 푸터영역 */
+
+footer{
+  height: 65px;
+  margin-top: 20px;
+  background-color: #666;
+  text-align: center;
+}
+
+footer > ul{
+  color: #fff;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+footer > ul > li{
+  display: inline;
+  line-height: 20px;
+}
+
+footer > ul > li > a{
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+}
+
+footer > ul > li > a > span{display: none;}
+
+address{
+  line-height: 20px;
+  font-style: normal;
+  font-size: 12px;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+

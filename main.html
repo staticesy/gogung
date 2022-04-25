@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>가보자궁</title>
+
+  <!-- 여백초기화 -->
+  <link href="./css/reset.css" rel="stylesheet" type="text/css">
+
+  <!-- 공통레이아웃 -->
+  <link href="./css/base.css" rel="stylesheet" type="text/css">
+  <link href="./css/layout.css" rel="stylesheet" type="text/css">
+
+  <!-- 메인서식 -->
+  <link href="./css/main.css" rel="stylesheet" type="text/css">
+
+  <!-- 6. 아이콘폰트 주소 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <!-- 벤더프리픽스 -->
+  <script src="./script/prefixfree.min.js"></script>
+</head>
+
+<body>
+  <input type="checkbox" id="toggle">
+
+  <!-- 상단헤더영역 -->
+  <header> 
+    <h1>
+      <a href="main.html" title="메인페이지로 바로가기">
+        <img src="./icon_img/logo_02.png" alt="메인상단로고">
+      </a>
+    </h1>
+
+    <a href="login.html" title="로그인페이지로 넘어가기">
+      <img src="./icon_img/user.png" alt="로그인페이지">
+    </a>
+
+    <label for="toggle" class="toggle_btn">
+      <img src="./icon_img/toggle.png" alt="토글버튼">
+    </label>
+
+
+    <nav>
+      <label for="toggle" class="close_btn">
+        <i class="fas fa-times"></i>
+      </label>
+      <ul class="gnb">
+        <div class="gnb_box">
+        <li>
+          <label for="mnu01">
+            <img src="./icon_img/logo02.png" alt="고궁소개">
+            고궁소개<i class="fas fa-angle-down"></i></label>
+          <input type="checkbox" id="mnu01">
+          <ul class="sub">
+            <li><a href="#" title="경복궁">경복궁</a></li>
+            <li><a href="#" title="창덕궁">창덕궁</a></li>
+            <li><a href="#" title="창경궁">창경궁</a></li>
+            <li><a href="#" title="덕수궁">덕수궁</a></li>
+            <li><a href="#" title="경희궁">경희궁</a></li>
+          </ul>
+        </li>
+        <li>
+          <label for="mnu02">
+            <img src="./icon_img/icon_car.png" alt="교통소개">
+            교통소개<i class="fas fa-angle-down"></i></label>
+          <input type="checkbox" id="mnu02">
+          <ul class="sub">
+            <li><a href="#" title="대중교통">대중교통</a></li>
+            <li><a href="#" title="자동차">자동차</a></li>
+            <li><a href="#" title="자전거">자전거</a></li>
+            <li><a href="#" title="도보">도보</a></li>
+            <li><a href="#" title="시티투어버스">시티투어버스</a></li>
+          </ul>
+        </li>
+        <li>
+          <label for="mnu03">
+            <img src="./icon_img/icon_bed.png" alt="숙소소개">
+            숙소<i class="fas fa-angle-down"></i></label>
+          <input type="checkbox" id="mnu03">
+          <ul class="sub">
+            <li><a href="#" title="호텔">호텔</a></li>
+            <li><a href="#" title="게스트하우스">게스트하우스</a></li>
+            <li><a href="#" title="에어비앤비">에어비앤비</a></li>
+          </ul>
+        </li>
+        <li>
+          <label for="mnu04">
+            <img src="./icon_img/icon_meal.png" alt="맛집">
+            맛집<i class="fas fa-angle-down"></i></label>
+          <input type="checkbox" id="mnu04">
+          <ul class="sub">
+            <li><a href="#" tle="한식">한식</a></li>
+            <li><a href="#" title="양식">양식</a></li>
+            <li><a href="#" title="아시안">아시안</a></li>
+            <li><a href="#" title="패스트푸드">패스트푸드</a></li>
+            <li><a href="#" title="카페">카페</a></li>
+          </ul>
+        </li>
+        <li>
+          <label for="mnu05">
+            <img src="./icon_img/icon_info.png" alt="여행정보">
+            여행정보
+            <i class="fas fa-angle-down"></i></label>
+          <input type="checkbox" id="mnu05">
+          <ul class="sub">
+            <li><a href="#" title="주변명소">주변명소</a></li>
+            <li><a href="#" title="유적지">유적지</a></li>
+            <li><a href="#" title="쇼핑">쇼핑</a></li>
+            <li><a href="#" title="행사">행사</a></li>
+          </ul>
+        </li>
+        </div>
+      </ul> 
+    </nav>
+
+
+
+  </header>
+
+  <!-- 메인콘텐츠영역 -->
+  <main>
+    <section class="tour">
+      <h2>고궁소개</h2>
+        <p>조선 왕조 500년,<br>그 역사를 품은 5대 궁궐로 가보자!</p>
+        <a href="sub01.html" title="고궁 소개 페이지">
+          <img src="./images/kyoung.jpg" alt="고궁소개">
+        </a>
+    </section>
+
+    <div class="mid_con">
+    <section class="transit">
+      <h2>교통정보</h2>
+        <a href="sub02.html" title="교통 정보 페이지">
+          <img src="./images/traffic.jpg" alt="교통정보">
+        </a>
+    </section>
+
+    <section class="hotel">
+      <h2>숙박정보</h2>
+        <a href="sub03.html" title="숙박 정보 페이지">
+          <img src="./images/hotel.jpg" alt="숙박정보">
+        </a>
+    </section>    
+    </div>
+
+    <section class="food">
+      <h2>맛집정보</h2>
+       <a href="sub04.html" title="맛집 정보 페이지">  
+          <img src="./images/food.jpg" alt="맛집정보">
+           <span>서울 맛집 보러가기</span><img src="./icon_img/arrow_right.png" alt="화살표">
+       </a>
+    </section>
+
+    <section class="attraction" alt="명소정보">
+      <h2>명소정보</h2>
+      <p class="at_01">고궁 주변에 가볼만 한 곳!</p>
+      <p class="at_02">주변 명소를 알아보자</p>
+      <ul class="attraction_warp">
+        <li>
+          <a href="attraction01.html" title="명소">
+            <img src="./images/attraction01.jpg" alt="명소"><span>명소</span>
+          </a>
+        </li>
+        <li>
+          <a href="attraction02.html" title="쇼핑">               
+            <img src="./images/attraction02.jpg" alt="쇼핑"><span>쇼핑</span>
+          </a>
+        </li>
+        <li>
+          <a href="attraction03.html" title="유적지">
+            <img src="./images/attraction03.jpg" alt="유적지"><span>유적지</span>
+          </a>
+        </li>
+    </section>
+  </main>
+
+  <!-- 푸터영역 -->
+  <footer>
+
+    <ul class="f_lnb">
+      <li><a href="a.html" title="이용약관">이용약관</a></li> &#x007C; 
+      <li><a href="privacy.html" title="개인정보처리방침">개인정보처리방침</a></li>
+      <li><a href="sns.html" title="페이스북"><i class="fab fa-facebook"></i><span>페이스북</span></a></li>
+      <li><a href="sns.html" title="인스타"><i class="fab fa-instagram"></i><span>인스타</span></a></li>
+    </ul>
+
+    <address>
+      <p>&copy;statice099 All Rights Reserved.</p>
+    </address>
+  </footer>
+
+</body>
+</html>
